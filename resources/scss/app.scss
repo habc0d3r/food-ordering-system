@@ -1,4 +1,10 @@
-$primary: red;
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+$primary: rgb(173, 224, 173);
 
 body{
     background: $primary;
