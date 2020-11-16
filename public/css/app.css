@@ -21639,7 +21639,11 @@ video {
 }
 
 body {
-  background: #ade0ad;
+  background: #f1f6f9;
+}
+
+.cart {
+  background: #ec5858;
 }
 
 @media (min-width: 640px) {

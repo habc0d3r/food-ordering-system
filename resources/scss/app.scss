@@ -4,8 +4,12 @@
 
 @tailwind utilities;
 
-$primary: rgb(173, 224, 173);
+@import './variables';
 
-body{
-    background: $primary;
+body {
+    background: $gray;
+}
+
+.cart {
+    background: $orange;
 }
