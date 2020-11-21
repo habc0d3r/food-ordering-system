@@ -21646,6 +21646,31 @@ body {
   background: #ec5858;
 }
 
+.size {
+  background: rgba(197, 185, 185, 0.89);
+}
+
+.add-to-card {
+  border: 2px solid #ec5858;
+  color: #ec5858;
+}
+
+.add-to-card:hover {
+  background: #ec5858;
+  border: #fff;
+  color: #fff;
+}
+
+.title {
+  text-decoration: underline;
+  text-align: center;
+}
+
+.item-title {
+  text-align: left;
+  text-decoration: underline;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;

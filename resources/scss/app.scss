@@ -13,3 +13,28 @@ body {
 .cart {
     background: $orange;
 }
+
+.size{
+    background: $secondary;
+}
+
+.add-to-card{
+    border: 2px solid $orange;
+    color: $orange;
+    &:hover{
+        background: $orange;
+        border: $pure;
+        color: $pure;
+    }
+}
+
+
+.title{
+    text-decoration: underline;
+    text-align: center;
+}
+
+.item-title{
+    text-align: left;
+    text-decoration: underline; 
+}
