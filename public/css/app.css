@@ -21640,10 +21640,16 @@ video {
 
 body {
   background: #f1f6f9;
+  padding-bottom: 500px;
 }
 
 .cart {
   background: #ec5858;
+}
+
+.category .container div {
+  width: 130.54px;
+  height: 130.54px;
 }
 
 @media (min-width: 640px) {

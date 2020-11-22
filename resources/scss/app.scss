@@ -8,8 +8,14 @@
 
 body {
     background: $gray;
+    padding-bottom: 500px;
 }
 
 .cart {
     background: $orange;
+}
+
+.category .container div {
+    width: 130.54px;
+    height: 130.54px;
 }
