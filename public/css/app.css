@@ -21639,11 +21639,11 @@ video {
 }
 
 body {
-  background: #f1f6f9;
+  background: #fff;
 }
 
 .cart {
-  background: #ec5858;
+  background: #05a357;
 }
 
 .size {
@@ -21651,13 +21651,12 @@ body {
 }
 
 .add-to-card {
-  border: 2px solid #ec5858;
-  color: #ec5858;
+  border: 2px solid #05a357;
+  color: #05a357;
 }
 
 .add-to-card:hover {
-  background: #ec5858;
-  border: #fff;
+  background: #05a357;
   color: #fff;
 }
 
@@ -21666,9 +21665,33 @@ body {
   text-align: center;
 }
 
-.item-title {
-  text-align: left;
-  text-decoration: underline;
+.btn-primary {
+  background: #ec5858;
+}
+
+.btn-primary:hover {
+  background: #a53a3a;
+  transition: 0.3s background-color;
+}
+
+.viewAll {
+  color: #05a357;
+}
+
+.viewMore .arrow {
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #ccc;
+  opacity: 0.3;
+  border-radius: 50%;
+}
+
+.viewMore .arrow.darker, .viewMore .arrow:hover {
+  opacity: 1;
+  transition: 0.3s background-color;
 }
 
 @media (min-width: 640px) {

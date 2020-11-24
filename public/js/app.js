@@ -115,8 +115,8 @@ console.log("Hello from app.js!!!");
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /home/habc0d3r/Desktop/organic-grocery-store/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /home/habc0d3r/Desktop/organic-grocery-store/resources/scss/app.scss */"./resources/scss/app.scss");
+__webpack_require__(/*! /mnt/d/college_project_WT/realtime-food-ordering-system/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /mnt/d/college_project_WT/realtime-food-ordering-system/resources/scss/app.scss */"./resources/scss/app.scss");
 
 
 /***/ })

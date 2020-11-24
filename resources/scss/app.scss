@@ -7,11 +7,11 @@
 @import './variables';
 
 body {
-    background: $gray;
+    background: $pure;
 }
 
 .cart {
-    background: $orange;
+    background: $color-green;
 }
 
 .size{
@@ -19,22 +19,44 @@ body {
 }
 
 .add-to-card{
-    border: 2px solid $orange;
-    color: $orange;
+    border: 2px solid $color-green;
+    color: $color-green;
     &:hover{
-        background: $orange;
-        border: $pure;
+        background: $color-green;
         color: $pure;
     }
 }
 
-
-.title{
+.title {
     text-decoration: underline;
     text-align: center;
 }
 
-.item-title{
-    text-align: left;
-    text-decoration: underline; 
+.btn-primary {
+    background: $orange; 
+    &:hover {
+        background: $orange-hover;
+        transition: $smooth;
+    }
+}
+
+.viewAll {
+    color: $color-green;
+}
+.viewMore {
+    .arrow {
+        width: 40px;
+        height: 40px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background: #ccc;
+        opacity: 0.3;
+        border-radius: 50%;
+        &.darker,
+        &:hover {
+            opacity: 1;
+            transition: $smooth;
+        }
+    }
 }
