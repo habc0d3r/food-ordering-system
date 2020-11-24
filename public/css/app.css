@@ -21652,6 +21652,10 @@ body {
   height: 130.54px;
 }
 
+a {
+  transition: 0.2s linear;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
