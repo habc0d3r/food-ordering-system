@@ -11,6 +11,10 @@ body {
     padding-bottom: 50px;
 }
 
+.btn-primary {
+    background-color: $orange;
+}
+
 .cart {
     background: $orange;
 }
@@ -18,12 +22,34 @@ body {
 .category .container div {
     width: 130.54px;
     height: 130.54px;
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    img {
+        width: 100px;
+    }
 }
 
 a {
     transition: $smooth;
 }
+//* "/cart" route
 
-// section.shopping-cart {
-//     background-color: ghostwhite;
-// }
+section.shopping-cart {
+    .amount {
+        color: $orange
+    }
+}
+
+//* "/login" route
+
+section.login {
+    a {
+        color: $orange;
+        &:hover {
+            color: rgb(189, 50, 0);
+        }
+    }
+}

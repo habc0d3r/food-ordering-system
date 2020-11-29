@@ -21643,6 +21643,10 @@ body {
   padding-bottom: 50px;
 }
 
+.btn-primary {
+  background-color: #ec5858;
+}
+
 .cart {
   background: #ec5858;
 }
@@ -21652,8 +21656,30 @@ body {
   height: 130.54px;
 }
 
+.category .container div div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.category .container div img {
+  width: 100px;
+}
+
 a {
   transition: 0.2s linear;
+}
+
+section.shopping-cart .amount {
+  color: #ec5858;
+}
+
+section.login a {
+  color: #ec5858;
+}
+
+section.login a:hover {
+  color: #bd3200;
 }
 
 @media (min-width: 640px) {
