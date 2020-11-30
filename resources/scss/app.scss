@@ -14,14 +14,14 @@ body {
     background: $color-green;
 }
 
-.size{
+.size {
     background: $secondary;
 }
 
-.add-to-card{
+.add-to-card {
     border: 2px solid $color-green;
     color: $color-green;
-    &:hover{
+    &:hover {
         background: $color-green;
         color: $pure;
     }
@@ -57,6 +57,51 @@ body {
         &:hover {
             opacity: 1;
             transition: $smooth;
+            background: $gray;
+            padding-bottom: 50px;
         }
     }
 }
+
+.btn-primary {
+    background-color: $orange;
+}
+
+.cart {
+    background: $orange;
+}
+
+section.category .container div {
+    width: 130.54px;
+    height: 130.54px;
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    img {
+        width: 100px;
+    }
+}
+
+a {
+    transition: $smooth;
+}
+//* "/cart" route
+
+section.shopping-cart {
+    .amount {
+        color: $orange;
+    }
+}
+
+//* "/login" route
+
+section.login {
+    a {
+        color: $orange;
+        &:hover {
+            color: rgb(189, 50, 0);
+        }
+    }
+} 
