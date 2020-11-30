@@ -21694,6 +21694,15 @@ body {
   transition: 0.3s background-color;
 }
 
+.footer {
+  border: 2px solid tomato;
+  height: 20em;
+}
+
+.footer div {
+  border: 2px solid #119b11;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
