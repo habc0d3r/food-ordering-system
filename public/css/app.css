@@ -21639,7 +21639,16 @@ video {
 }
 
 body {
+<<<<<<< HEAD
   background: #fff;
+=======
+  background: #f1f6f9;
+  padding-bottom: 50px;
+}
+
+.btn-primary {
+  background-color: #ec5858;
+>>>>>>> dev-uddi
 }
 
 .cart {
@@ -21669,6 +21678,7 @@ body {
   background: #ec5858;
 }
 
+<<<<<<< HEAD
 .btn-primary:hover {
   background: #a53a3a;
   transition: 0.3s background-color;
@@ -21692,6 +21702,37 @@ body {
 .viewMore .arrow.darker, .viewMore .arrow:hover {
   opacity: 1;
   transition: 0.3s background-color;
+=======
+.category .container div {
+  width: 130.54px;
+  height: 130.54px;
+}
+
+.category .container div div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.category .container div img {
+  width: 100px;
+}
+
+a {
+  transition: 0.2s linear;
+}
+
+section.shopping-cart .amount {
+  color: #ec5858;
+}
+
+section.login a {
+  color: #ec5858;
+}
+
+section.login a:hover {
+  color: #bd3200;
+>>>>>>> dev-uddi
 }
 
 @media (min-width: 640px) {
