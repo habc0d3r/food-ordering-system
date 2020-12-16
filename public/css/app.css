@@ -21642,21 +21642,19 @@ body {
   background: #fff;
 }
 
-.cart {
-  background: #05a357;
-}
-
 .size {
-  background: rgba(197, 185, 185, 0.89);
+  background: #ccc;
 }
 
 .add-to-card {
   border: 2px solid #05a357;
   color: #05a357;
+  transition: all 300ms ease-in-out;
 }
 
 .add-to-card:hover {
   background: #05a357;
+  border-color: #fff;
   color: #fff;
 }
 
@@ -21666,12 +21664,12 @@ body {
 }
 
 .btn-primary {
-  background: #ec5858;
+  background: #fe5f1e;
+  transition: all 300ms ease-in-out;
 }
 
 .btn-primary:hover {
-  background: #a53a3a;
-  transition: 0.2s linear;
+  background: #b23301;
 }
 
 .viewAll {
@@ -21691,17 +21689,17 @@ body {
 
 .viewMore .arrow.darker, .viewMore .arrow:hover {
   opacity: 1;
-  transition: 0.2s linear;
-  background: #f1f6f9;
-  padding-bottom: 50px;
-}
-
-.btn-primary {
-  background-color: #ec5858;
+  transition: all 300ms ease-in-out;
+  background: #ccc;
 }
 
 .cart {
-  background: #ec5858;
+  background: #fe5f1e;
+  transition: all 300ms ease-in-out;
+}
+
+.cart:hover {
+  background-color: #b23301;
 }
 
 section.category .container div {
@@ -21720,19 +21718,32 @@ section.category .container div img {
 }
 
 a {
-  transition: 0.2s linear;
+  transition: all 300ms ease-in-out;
 }
 
 section.shopping-cart .amount {
-  color: #ec5858;
+  color: #fe5f1e;
 }
 
 section.login a {
-  color: #ec5858;
+  color: #fe5f1e;
+  transition: all 300ms ease-in-out;
 }
 
 section.login a:hover {
-  color: #bd3200;
+  color: #b23301;
+}
+
+.shadow-dreamy {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+}
+
+.shadow-shorter {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11), 0 4px 4px rgba(0, 0, 0, 0.11), 0 6px 8px rgba(0, 0, 0, 0.11), 0 8px 16px rgba(0, 0, 0, 0.11);
+}
+
+.shadow-subtle {
+  box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.2);
 }
 
 @media (min-width: 640px) {

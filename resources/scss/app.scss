@@ -10,19 +10,17 @@ body {
     background: $pure;
 }
 
-.cart {
-    background: $color-green;
-}
-
 .size {
-    background: $secondary;
+    background: $gray;
 }
 
 .add-to-card {
     border: 2px solid $color-green;
     color: $color-green;
+    transition: $smooth;
     &:hover {
         background: $color-green;
+        border-color: $pure;
         color: $pure;
     }
 }
@@ -33,10 +31,10 @@ body {
 }
 
 .btn-primary {
-    background: $orange; 
+    background: $primary; 
+    transition: $smooth;
     &:hover {
-        background: $orange-hover;
-        transition: $smooth;
+        background: $primary-hover;
     }
 }
 
@@ -58,17 +56,16 @@ body {
             opacity: 1;
             transition: $smooth;
             background: $gray;
-            padding-bottom: 50px;
         }
     }
 }
 
-.btn-primary {
-    background-color: $orange;
-}
-
 .cart {
-    background: $orange;
+    background: $primary;
+    transition: $smooth;
+    &:hover {
+        background-color: $primary-hover;
+    }
 }
 
 section.category .container div {
@@ -91,7 +88,7 @@ a {
 
 section.shopping-cart {
     .amount {
-        color: $orange;
+        color: $primary;
     }
 }
 
@@ -99,9 +96,33 @@ section.shopping-cart {
 
 section.login {
     a {
-        color: $orange;
+        color: $primary;
+        transition: $smooth;
         &:hover {
-            color: rgb(189, 50, 0);
+            color: $primary-hover
         }
     }
-} 
+}
+
+//* box-shadow
+
+.shadow-dreamy {
+    box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
+                0 2px 4px rgba(0,0,0,0.07), 
+                0 4px 8px rgba(0,0,0,0.07), 
+                0 8px 16px rgba(0,0,0,0.07),
+                0 16px 32px rgba(0,0,0,0.07), 
+                0 32px 64px rgba(0,0,0,0.07);
+}
+
+.shadow-shorter {
+  box-shadow: 0 1px 1px rgba(0,0,0,0.11), 
+              0 2px 2px rgba(0,0,0,0.11), 
+              0 4px 4px rgba(0,0,0,0.11), 
+              0 6px 8px rgba(0,0,0,0.11),
+              0 8px 16px rgba(0,0,0,0.11);
+}
+
+.shadow-subtle {
+    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.2);
+}

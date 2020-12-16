@@ -1,10 +1,14 @@
 //* Colors
-$gray: #f1f6f9;
 $orange: #ec5858;
-$orange-hover: #a53a3a;
-$secondary: rgba(197, 185, 185, 0.89);
-$pure: #fff;
 $color-green: rgb(5, 163, 87);
 
+// pizza delivery colors
+$primary: #fe5f1e;
+$primary-hover: #b23301;
+$secondary: #f8f8f8;
+$pure: #fff;
+$dark: #232323;
+$gray: #ccc;
+
 // *transition 
-$smooth : 0.2s linear;
+$smooth: all 300ms ease-in-out;
