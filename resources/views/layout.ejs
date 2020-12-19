@@ -26,7 +26,11 @@
             <a class="ml-12" href="#"><i data-feather="search" style="width: 20px;"></i></a>
             <a class="ml-12" href="/register"><i data-feather="user-plus" style="width: 20px;"></i></a>
             <a class="ml-12" href="/login"><i data-feather="user" style="width: 20px;"></i></a>
-            <a class="cart ml-12 px-4 py-2 rounded-full text-white" href="/cart"><i data-feather="shopping-cart" style="width: 20px;"></i></a>
+            <a class="cart ml-12 px-4 py-2 rounded-full text-white flex items-center" href="/cart">
+              <span id="cartCounter" class="text-white font-bold pr-2"><%= session.cart ? session.cart.totalQty: '' 
+                %></span> 
+              <i data-feather="shopping-cart" style="width: 20px;"></i>
+            </a>
           </div>
         </div>
     </nav>
@@ -36,8 +40,7 @@
     <!-- <footer>
     </footer> -->
 
-    <script src="/js/app.js"></script>
-    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <script type="text/javascript" src="/js/app.js"></script>
     <script>
       feather.replace()
     </script>

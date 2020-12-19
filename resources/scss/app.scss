@@ -7,14 +7,15 @@
 @import './variables';
 
 body {
-    background: $pure;
+    // background: $pure;
+    background-color: #f6f8ff;
 }
 
 .size {
     background: $gray;
 }
 
-.add-to-card {
+.add-to-cart {
     border: 2px solid $color-green;
     color: $color-green;
     transition: $smooth;
