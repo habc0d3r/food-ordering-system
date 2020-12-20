@@ -21643,7 +21643,7 @@ body {
 }
 
 .cart {
-  background: #05a357;
+  background: #04c266;
 }
 
 .size {
@@ -21651,12 +21651,12 @@ body {
 }
 
 .add-to-card {
-  border: 2px solid #05a357;
-  color: #05a357;
+  border: 2px solid #04c266;
+  color: #04c266;
 }
 
 .add-to-card:hover {
-  background: #05a357;
+  background: #04c266;
   color: #fff;
 }
 
@@ -21675,7 +21675,7 @@ body {
 }
 
 .viewAll {
-  color: #05a357;
+  color: #04c266;
 }
 
 .viewMore .arrow {
@@ -21701,6 +21701,27 @@ body {
 
 .footer div {
   border: 2px solid #119b11;
+}
+
+section.cart-sec {
+  background: #f1f6f9;
+}
+
+section.cart-sec .amount {
+  color: #ec5858;
+}
+
+section.login {
+  background: rgba(197, 185, 185, 0.89);
+  min-height: 100vh;
+}
+
+section.login a {
+  color: #ec5858;
+}
+
+section.login a:hover {
+  color: #a53a3a;
 }
 
 @media (min-width: 640px) {
