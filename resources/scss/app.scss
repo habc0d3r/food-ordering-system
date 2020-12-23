@@ -5,6 +5,8 @@
 @tailwind utilities;
 
 @import './variables';
+@import '~noty/src/noty.scss';
+@import '~noty/src/themes/mint.scss';
 
 body {
     // background: $pure;
@@ -23,6 +25,9 @@ body {
         background: $color-green;
         border-color: $pure;
         color: $pure;
+    }
+    &:focus {
+        outline: none;
     }
 }
 
@@ -126,4 +131,9 @@ section.login {
 
 .shadow-subtle {
     box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.2);
+}
+
+.noty_theme__mint {
+    border-radius: 50px !important;
+    padding-left: 8px !important;
 }
