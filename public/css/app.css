@@ -22049,6 +22049,10 @@ section.login a:hover {
   padding-left: 8px !important;
 }
 
+a.link {
+  color: #fe5f1e;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
