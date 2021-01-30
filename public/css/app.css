@@ -22036,6 +22036,7 @@ a {
 
 section.callToAction {
   background: #90EE90;
+  margin-bottom: -1.25rem;
 }
 
 section.login {
