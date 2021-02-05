@@ -21939,6 +21939,10 @@ body {
   background-color: #fff;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 nav.navbar {
   background-color: #90EE90;
 }
