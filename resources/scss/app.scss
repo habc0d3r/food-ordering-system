@@ -18,9 +18,9 @@ html {
     scroll-behavior: smooth;
 }
 
-nav.navbar {
-    background-color: $backgroundColor;
-}
+// nav.navbar {
+//     background-color: $backgroundColor;
+// }
 
 .hero {
     background-color: $backgroundColor;
@@ -365,10 +365,10 @@ a.link {
     transition: all .5s ease-in-out;
 }
 
-.btn:hover {
-    background-color: transparent;
-    border-color: $pure;
-}
+// .btn:hover {
+//     background-color: transparent;
+//     border-color: $pure;
+// }
 
 .hamburger {
     display: none;

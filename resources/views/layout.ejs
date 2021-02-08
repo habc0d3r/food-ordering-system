@@ -22,21 +22,10 @@
               <span></span>
           </div>
           <ul class="nav-list">
-              <!-- <li><a href="#">Services</a>
-                  <ul class="dropdown-list">
-                      <li><a href="#">SEO Optimisation</a></li>
-                      <li><a href="#">Digital Marketing</a></li>
-                      <li><a href="#">Web Development</a></li>
-                      <li><a href="#">Web Design</a></li>
-                      <li><a href="#">Software Engineering</a></li>
-                      <li><a href="#">Branding</a></li>
-                      <li><a href="#">Content Writing</a></li>
-                  </ul>
-              </li> -->
               <% if(user) { %>
                   <form id="logout" action="/logout" method="POST">
                       <li>
-                          <button class="btn" onclick="document.getElementById('logout').submit()" href="#">Logout</button>
+                          <a class="rounded flex items-center text-green-700 font-bold" onclick="document.getElementById('logout').submit()" href="#">LOGOUT</a>
                       </li>
                   </form>
               <% } else { %>

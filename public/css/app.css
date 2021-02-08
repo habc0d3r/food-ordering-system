@@ -21943,10 +21943,6 @@ html {
   scroll-behavior: smooth;
 }
 
-nav.navbar {
-  background-color: #90EE90;
-}
-
 .hero {
   background-color: #90EE90;
 }
@@ -22266,11 +22262,6 @@ a.link {
   letter-spacing: 1px;
   border: 1px solid transparent;
   transition: all 0.5s ease-in-out;
-}
-
-.btn:hover {
-  background-color: transparent;
-  border-color: #fff;
 }
 
 .hamburger {
