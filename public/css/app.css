@@ -21943,6 +21943,10 @@ html {
   scroll-behavior: smooth;
 }
 
+nav.navbar {
+  background-color: #90EE90;
+}
+
 .hero {
   background-color: #90EE90;
 }
