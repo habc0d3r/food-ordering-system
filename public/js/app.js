@@ -27067,6 +27067,19 @@ hamburger.addEventListener('click', function () {
     isActive = false;
   }
 });
+var x = document.querySelector('.navbar');
+
+if (document.URL.includes('http://localhost:3000/cart')) {
+  x.style.backgroundColor = "white";
+}
+
+if (document.URL.includes("http://localhost:3000/customer")) {
+  x.style.backgroundColor = "white";
+}
+
+if (document.URL.includes("http://localhost:3000/admin")) {
+  x.style.backgroundColor = "white";
+}
 
 /***/ }),
 
