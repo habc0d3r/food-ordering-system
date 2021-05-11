@@ -27081,6 +27081,12 @@ if (document.URL.includes("http://localhost:3000/admin")) {
   x.style.backgroundColor = "white";
 }
 
+var y = document.querySelector('#orderLink');
+
+if (document.URL.includes("http://localhost:3000/admin/orders")) {
+  y.style.display = "none";
+}
+
 /***/ }),
 
 /***/ "./resources/scss/app.scss":

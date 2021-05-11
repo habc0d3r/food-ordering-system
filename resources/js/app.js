@@ -148,3 +148,9 @@ if(document.URL.includes("http://localhost:3000/customer")) {
 if(document.URL.includes("http://localhost:3000/admin")) {
     x.style.backgroundColor = "white";
 }
+
+const y = document.querySelector('#orderLink')
+
+if(document.URL.includes("http://localhost:3000/admin/orders")) {
+    y.style.display = "none";
+}
