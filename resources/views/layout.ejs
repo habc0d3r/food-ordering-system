@@ -21,13 +21,16 @@
               <span></span>
               <span></span>
           </div>
-          <ul class="nav-list">
+          <ul class="nav-list flex">
               <% if(user) { %>
                   <form id="logout" action="/logout" method="POST">
                       <li>
                           <a class="rounded flex items-center text-green-700 font-bold" onclick="document.getElementById('logout').submit()" href="#">LOGOUT</a>
                       </li>
                   </form>
+                  <li>
+                    <a href="/customer/orders" class="rounded flex items-center text-green-700 font-bold">ORDERS</a>
+                </li>
               <% } else { %>
                   <li>
                       <a href="/register" class="rounded flex items-center text-green-700 font-bold">SIGN UP</a>
@@ -50,7 +53,7 @@
 
   <%- body %>
 
-  <footer class="text-gray-600 body-font bg-blue-900">
+  <footer id="main-footer" class="text-gray-600 body-font bg-blue-900">
     <div class="container px-5 py-16 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
       <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
         <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
