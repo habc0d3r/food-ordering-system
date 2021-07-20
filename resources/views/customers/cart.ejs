@@ -1,45 +1,90 @@
 <section class="shopping-cart py-16">
-    <% if(session.cart) { %>
-    <div class="order container mx-auto xl:w-1/2">
-        <div class="flex items-center border-b border-gray-300 pb-4">
-            <img src="/img/shopping-cart.svg" alt="" style="width: 40px;">
-            <h1 class="font-bold ml-5 text-2xl">Order Summery</h1>
-        </div>
-        <div class="cart-items">
-            <% for(let pizza of Object.values(session.cart.items)) { %>
-            <div class="flex items-center py-6">
-                <img class="w-20" src="/img/<%= pizza.item.image %>" alt="">
-                <div class="ml-4 flex-1">
-                    <h1><%= pizza.item.name %></h1>
-                    <span><%= pizza.item.size %></span>
+    <% if(session.cart) { 
+        let ui_tax = Number(session.cart.totalPrice * 0.05)
+        let ui_shipping = Number(session.cart.totalPrice >= 399 ? 19 : 59).toFixed(2)
+        let ui_totalPrice = Number(session.cart.totalPrice).toFixed(2);
+        let grandTotal = Number(ui_totalPrice) + Number(ui_shipping) + Number(ui_tax);
+        %>
+        <div class="grid cart-content container">
+            <div class="order mx-auto xl:w-1/2">
+                <div class="flex items-center border-b border-gray-300 pb-4">
+                    <img src="/img/shopping-cart.svg" alt="" style="width: 40px;">
+                    <h1 class="font-bold ml-5 text-2xl">Cart Items</h1>
                 </div>
-                <span class="flex-1"><%= pizza.qty %> Pcs</span>
-                <span class="font-bold text-lg"> ₹ <%= pizza.item.price * pizza.qty %></span>
-            </div>
-            <% } %>
-        </div>
-        <hr>
-        <div class="text-right py-4">
-            <div>
-                <span class="text-lg font-bold">Total Amount:</span>
-                <span class="amount text-2xl font-bold ml-2">₹<%= session.cart.totalPrice %></span>
-            </div>
-            <% if(user) { %>
-            <div>
-                <form action="/orders" method="POST" class="mt-12">
-                    <input name="address" class="border border-gray-400 p-2 w-1/2 mb-4" type="text" placeholder="Address">
-                    <input name="phone" class="border border-gray-400 p-2 w-1/2 mb-6" type="text" placeholder="Phone Number">
-                    <div>
-                        <button class="btn-primary rounded-full py-2 px-6 text-white font-bold bg-orange-700" type="submit">Order Now</button>
+                <div class="cart-items">
+                    <% for(let pizza of Object.values(session.cart.items)) { %>
+                    <div class="flex items-center py-6 gap-1">
+                        <img class="w-20" src="/img/<%= pizza.item.image %>" alt="">
+                        <div class="ml-4 flex-1">
+                            <h1><%= pizza.item.name %></h1>
+                            <span><%= pizza.item.size %></span>
+                        </div>
+                        <!-- <span class="flex-1 border py-2 mx-3"><select name="select-qty" id="select-qty">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select></span> -->
+                        <span class="flex-1"><%= pizza.qty %> Pcs</span>
+                        <span style='cursor: pointer;' class="flex-1"><i class="fas fa-trash" style="color: rgb(196, 47, 47);"></i></span>
+                        <span class="font-bold text-lg"> ₹ <%= pizza.item.price * pizza.qty %></span>
                     </div>
-                </form>
+                    <% } %>
+                </div>
+                <hr>
+                <div class="text-right py-4">
+                    <div>
+                        <span class="text-lg font-bold">Total Amount:</span>
+                        <span class="amount text-2xl font-bold ml-2">₹<%= grandTotal.toFixed(2) %></span>
+                    </div>
+                    <% if(user) { %>
+                    <div>
+                        <form action="/orders" method="POST" class="mt-12">
+                            <input name="address" class="border border-gray-400 p-2 w-1/2 mb-4" type="text" placeholder="Address">
+                            <input name="phone" class="border border-gray-400 p-2 w-1/2 mb-6" type="text"
+                                placeholder="Phone Number">
+                            <div>
+                                <button class="btn-primary rounded-full py-2 px-6 text-white font-bold bg-orange-700"
+                                    type="submit">Order Now</button>
+                            </div>
+                        </form>
+                    </div>
+                    <% } else { %>
+                    <a href="/login"
+                        class="inline-block cursor-pointer btn-primary rounded-full py-2 px-6 text-white font-bold bg-orange-700 mt-6">Login
+                        to Continue</a>
+                    <% } %>
+                </div>
             </div>
-            <% } else { %>
-            <a href="/login" class="inline-block cursor-pointer btn-primary rounded-full py-2 px-6 text-white font-bold bg-orange-700 mt-6">Login to Continue</a>
-            <% } %>
+            <aside class="order-summary p-5 border-2 shadow-lg">
+                <h2 class="text-xl">Order Summary</h2>
+                <div>
+                    <div class="row flex justify-between m-2">
+                        <p class="col">Total Items</p>
+                        <p class="col"><%= session.cart.totalQty %> Items</p>
+                    </div>
+                    <div class="row flex justify-between m-2">
+                        <p class="col">Tax</p>
+                        <p class="col">₹ <%= ui_tax %></p>
+                    </div>
+                    <div class="row flex justify-between m-2">
+                        <p class="col">Estimated Shipping</p>
+                        <p class="col">₹ <%= ui_shipping %></p>
+                    </div>
+                    <div class="row flex justify-between m-2">
+                        <p class="col font-bold">Grand Total</p>
+                        <p class="col">₹ <%= grandTotal.toFixed(2) %></p>
+                    </div>
+                </div>
+            </aside>
         </div>
-    </div>
-    
+   
    <%} else { %> 
     
     <div class="empty-cart py-0 px-32">

@@ -21840,12 +21840,6 @@ video {
   }
 }
 
-@keyframes noty_modal_out {
-  100% {
-    opacity: 0;
-  }
-}
-
 @-webkit-keyframes noty_anim_in {
   100% {
     transform: translate(0);
@@ -22050,6 +22044,21 @@ section.login {
 
 section.shopping-cart .amount {
   color: #05a357;
+}
+
+section.shopping-cart .cart-content {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+section.shopping-cart aside {
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+}
+
+section.shopping-cart aside h2 {
+  font-weight: bolder;
 }
 
 section.login a {
