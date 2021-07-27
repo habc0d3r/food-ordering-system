@@ -1,5 +1,5 @@
 <section class="shopping-cart py-16">
-    <% if(session.cart) { 
+    <% if(session.cart && session.cart.totalQty !== 0) { 
         let ui_tax = Number(session.cart.totalPrice * 0.05)
         let ui_shipping = Number(session.cart.totalPrice >= 399 ? 19 : 59).toFixed(2)
         let ui_totalPrice = Number(session.cart.totalPrice).toFixed(2);
@@ -32,7 +32,13 @@
                             <option value="10">10</option>
                         </select></span> -->
                         <span class="flex-1"><%= pizza.qty %> Pcs</span>
-                        <span style='cursor: pointer;' class="flex-1"><i class="fas fa-trash" style="color: rgb(196, 47, 47);"></i></span>
+                        <span style='cursor: pointer;' class="flex-1">
+                            <form action="/cart/remove/<%= pizza.item._id %>?_method=DELETE" method="POST">
+                                <button>
+                                    <i class="fas fa-trash" style="color: rgb(196, 47, 47);"></i>
+                                </button>
+                            </form>
+                        </span>
                         <span class="font-bold text-lg"> ₹ <%= pizza.item.price * pizza.qty %></span>
                     </div>
                     <% } %>

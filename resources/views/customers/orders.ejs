@@ -17,6 +17,7 @@
                         <th class="px-4 py-2 text-left">Orders</th>                        
                         <th class="px-4 py-2 text-left">Address</th>                        
                         <th class="px-4 py-2 text-left">Time</th>                        
+                        <th class="px-4 py-2 text-left">Date</th>                        
                     </tr>
                 </thead>
                 <tbody>
@@ -25,12 +26,20 @@
                             <tr>
                                 <td class="border px-4 py-2">
                                     <a class="link" href="/customer/orders/<%= order._id %>"><%= order._id %></a>
+                                    <p>
+                                        <%= Object.values(order.items).map(orderedItem => {
+                                            return `\n${orderedItem.item.name} - ${orderedItem.qty} Pcs` 
+                                        }) %>
+                                    </p>
                                 </td>
                                 <td class="border px-4 py-2">
                                     <%= order.address %>
                                 </td>
                                 <td class="border px-4 py-2">
                                     <%= moment(order.createdAt).format('hh:mm A') %>
+                                </td>
+                                <td class="border px-4 py-2">
+                                    <%= moment(order.createdAt).format('DD/MM/YYYY') %>
                                 </td>
                             </tr>
                         <% } %>
