@@ -27134,8 +27134,8 @@ if (document.URL.includes("http://localhost:3000/admin/orders")) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! D:\organicGroceryStore\organic-grocery-store\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! D:\organicGroceryStore\organic-grocery-store\resources\scss\app.scss */"./resources/scss/app.scss");
+__webpack_require__(/*! /home/datageek/Desktop/food-ordering-system/food-ordering-system/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /home/datageek/Desktop/food-ordering-system/food-ordering-system/resources/scss/app.scss */"./resources/scss/app.scss");
 
 
 /***/ })
